@@ -15,7 +15,7 @@ Digit::Digit(uint8_t iPin1, uint8_t iPin2, int brightness = 5)
 /**
  * Display a number on the digit display
  */
-void Digit::display(int number)
+void Digit::display(int number, bool leadingZero = false)
 {
-    digit.showNumberDec(number, true);
+    digit.showNumberDec(number, leadingZero);
 }
